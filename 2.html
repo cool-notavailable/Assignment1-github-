@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup</title>
+    <style>
+      body {
+        background-color: black;
+        height: 97vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: sans-serif;
+      }
+      .container {
+        background-color: #fff;
+        padding: 20px 40px;
+        height: 90vh;
+        width: 50vw;
+      }
+      h1 {
+        text-align: center;
+        font-size: 3rem;
+        margin-bottom: 70px;
+      }
+      p {
+        font-size: 1.2rem;
+      }
+      input[type="text"],
+      input[type="number"],
+      input[type="password"],
+      input[type="email"],
+      select {
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid black;
+      }
+      input[type="text"]:focus,
+      input[type="number"]:focus,
+      input[type="password"]:focus,
+      input[type="email"]:focus,
+      select:focus {
+        outline: none;
+      }
+      button {
+        width: 100%;
+        margin-top: 40px;
+        padding-block: 10px;
+        font-size: 1rem;
+        font-weight: 550;
+        background-color: turquoise;
+        border: none;
+        border-radius: 6px;
+      }
+      button:hover {
+        cursor: pointer;
+        background-color: mediumblue;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Signup</h1>
+      <form action="get">
+        <p>Name:</p>
+        <input type="text" name="name" id="" />
+        <p>Batch:</p>
+        <select name="batch" id="">
+          <option value="Sigma 2.0">Sigma 2.0</option>
+          <option value="Sigma 2.1">Sigma 2.1</option>
+          <option value="Sigma 2.2">Sigma 2.2</option>
+        </select>
+        <p>Age:</p>
+        <input type="number" name="date" id="" />
+        <p>Email:</p>
+        <input type="email" name="email" id="" />
+        <p>Password:</p>
+        <input type="password" name="password" id="" />
+        <button>Signup</button>
+      </form>
+    </div>
+  </body>
+</html>
